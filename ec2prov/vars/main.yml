@@ -1,0 +1,15 @@
+---
+# vars file for ec2prov
+image: "ami-0bcf5425cdc1d8a85"
+instance_type: "t2.micro"
+count: 1
+region: "ap-south-1"
+sg_group: "sg-0facc52a01c856e39"
+key_name: "first new instance"
+user_name: "AKIASRBG3WDHICLT4EX6"
+passwd: "KYR6TKKazO7uHcQwWO/OzjNF70iJr4saCxm6FQSi"
+instance_name:
+        - "kubernetes_Master"
+        - "kubernetes_slave1"
+        - "kubernetes_slave2"
+
