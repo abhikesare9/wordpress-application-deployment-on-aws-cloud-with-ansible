@@ -1,0 +1,19 @@
+
+- hosts: ["tag_Name_kubernetes_Master"]
+roles:
+          - name: "configuring k8s  master node"
+            role: "/root/ansiblews/task19/master"
+
+- hosts: ["tag_Name_kubernetes_slave1,tag_Name_kubernetes_slave2"]
+  vars_prompt:
+          - name: token
+            prompt: "Enter the command to join the worker nodes to the master nodes- "
+            private: no
+  roles:
+          - name: "configuring k8s  master node"
+            role: "/root/ansiblews/task19/slave"
+
+- hosts: ["tag_Name_kubernetes_Master"]
+  roles:
+          - name: "lauching wordpress application"
+            role: "/root/ansiblews/task19/wordpress"
