@@ -6,8 +6,8 @@ count: 1
 region: "ap-south-1"
 sg_group: "sg-0facc52a01c856e39"
 key_name: "first new instance"
-user_name: "AKIASRBG3WDHICLT4EX6"
-passwd: "KYR6TKKazO7uHcQwWO/OzjNF70iJr4saCxm6FQSi"
+user_name: "AXXXXXXXXXXXXXXXXXXXXX"
+passwd: "KXXXXXXXXXXXXXXXXXXXXXXxX"
 instance_name:
         - "kubernetes_Master"
         - "kubernetes_slave1"
